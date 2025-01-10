@@ -11,17 +11,17 @@
     <header>
         <a href="#" class="logo">Earl Joseph Claro</a>
         <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#" >Services</a>
-            <a href="#" >Skills</a>
-            <a href="#" >Education</a>
-            <a href="#" >Experience</a>
+            <a href="#home"> Home</a>
+            <a href="#about" >About</a>
+            <a href="#" >Projects</a>
+            <a href="https://drive.google.com/file/d/1_eP3Y8CP9Mgw5lR_8378EuwS7nqgDztr/view?usp=sharing" target="_blank">Resume</a>
+            <a href="https://www.linkedin.com/in/earl-joseph-claro-603350163/" target="_blank" >LinkedIn</a>
             <a href="#" >Contact</a>
         </nav>
     </header>
 
 <body style="background-color: black;">
-    <section class="home">
+    <section class="home" id="home" >
         <div class="home-img">
             <img src="assets/CLARO.png" alt="">
         </div>
@@ -52,6 +52,209 @@
             
             <a href="#" class="btn">Hire me</a>
         </div>
+        <br>
+        <br>
+   
     </section>
+
+    <section class="about" id="about" >
+        <div class="about-content">
+            <br>
+            <br>
+            <h2 style="color:gold">About Me</h2>
+            <br>
+            <br>
+            <p style="text-align: justify; margin-left: 350px;">Hi Everyone, I am <b style="color: gold;">Earl Joseph Claro</b> from Cebu City, Philippines. 
+            <p style="text-align: justify; margin-left: 350px;">I am currently a graduating 4th year BSIT Student in Cebu Institute of Technology University.</p>    
+            <p style="text-align: justify; margin-left: 350px;">I am interning as a Software Developer at 
+            <a style="color: gold; text-align: justify;" 
+                href="https://en.sun-asterisk.com/" 
+                target="_blank">Sun Asterisk Philippines</a> 
+            </p>            
+            <br>
+            <br>
+            <p style="text-align: justify; margin-left: 350px;">Apart from coding, some activities I love to do are:</p>
+            <ul>
+                <li>🎮 Playing Games (Minecraft, TFT, League of Legends, Civilization 6)</li>
+                <li>📚 Reading Web Novels (Science Fiction, Fantasy, and Suspense Novels)</li>
+                <li>🍰 Eating Delicious and Sweet Foods</li>
+            </ul>
+    
+            <p><i>"I want to build awesome websites!"</i></p>
+            <p>- <b>Earl</b></p>
+    
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3 style="font-size: 40px;">Professional Skillset</h3>
+            <br>
+            <div class="tech-icons">
+                <i class="fab fa-python" title="Python"></i>
+                <i class="fab fa-react" title="React"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                <i class="fab fa-node" title="Node.js"></i>
+                <i class="fa-brands fa-digital-ocean" title="DigitalOcean"></i>
+                <i class="fa-brands fa-html5" title="HTML"></i>
+                <i class="fa-solid fa-database" title="MySQL"></i>
+                <i class="fab fa-java" title="Java"></i>
+                <i class="fab fa-github" title="GitHub"></i>
+                <i class="fab fa-gitlab" title="GitLab"></i>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3 style="font-size: 40px;">Tools I Use</h3>
+            <br>
+            <div class="tech-icons">
+                <i class="fa-brands fa-digital-ocean" title="DigitalOcean"></i>
+                <i class="fa-solid fa-database" title="MySQL"></i>
+                <i class="fa-solid fa-cloud" title="Azure Cloud"></i>
+                <i class="fab fa-aws" title="AWS"></i>
+                <i class="fa-solid fa-code" title="VS Code"></i>
+                <i class="fa-brands fa-google" title="Google Apps"></i>
+                <i class="fa-brands fa-slack" title="Slack"></i>
+                <i class="fab fa-windows" title="Windows"></i>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .about {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            padding: 50px 20px;
+            text-align: center;
+        }
+    
+        .about-content h2 {
+            font-size: 36px;
+            color: #00bcd4;
+            margin-bottom: 20px;
+        }
+    
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+    
+        .about-content b {
+            color: #ff9800;
+        }
+    
+        .about-content ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+    
+        .about-content ul li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    
+        .about-content i {
+            font-size: 30px;
+            margin: 10px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+    
+        .about-content i:hover {
+            transform: scale(1.3);
+            color: #ff9800;
+        }
+    
+        .tech-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+    
+        .tech-icons i {
+            font-size: 100px;
+            color: #f0f0f0;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+    
+        .tech-icons i:hover {
+            color: #00bcd4;
+            transform: scale(1.2);
+        }
+    
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .tech-icons {
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            .tech-icons i {
+                font-size: 30px;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .tech-icons i {
+                font-size: 24px;
+            }
+        }
+    </style>
+    
+    
+
+        
 </body>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <p>Designed and Developed by <b>Earl Joseph Claro</b></p>
+        </div>
+        <div class="footer-center">
+            <p>Copyright © <span id="current-year"></span></p>
+        </div>
+        <ul class="footer-icons">
+            <li class="social-icons">
+                <a href="https://github.com/EarlClaro" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100007700865370" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li class="social-icons">
+                <a href="https://www.linkedin.com/in/earl-joseph-claro-603350163/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-icons">
+                <a href="mailto:earlclaro@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    // Automatically sets the current year
+    const year = new Date().getFullYear();
+    document.getElementById('current-year').textContent = year;
+</script>
+
+
+
 </html>

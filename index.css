@@ -16,8 +16,7 @@ html {
 
 body {
     width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
+    min-height: 100vh;  /* Ensures the body takes at least the height of the viewport */
     background-color: black;
     color: white;
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 40%),
@@ -26,8 +25,63 @@ body {
     background-position: 0 0, 25px 25px;
     background-repeat: repeat;
     position: relative;
-    overflow: hidden;
+    overflow: auto;  /* Allows scrolling when content overflows */
 }
+
+/* Footer Styles */
+.footer {
+    background-color: #222;
+    padding: -20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+    color: white;
+}
+
+.footer-center {
+    flex: 2;
+    text-align: center;
+    color: white;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-icons li {
+    display: inline;
+}
+
+.footer-icons li a {
+    color: white;
+    font-size:16px; /* Make icons smaller */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-icons li a:hover {
+    color: #FFD700;
+}
+
 
 header {
     margin-top: 20px;
