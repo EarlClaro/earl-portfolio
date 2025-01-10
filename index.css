@@ -36,6 +36,8 @@ body {
     bottom: 0;
     width: 100%;
     text-align: center;
+    z-index: 1;
+
 }
 
 .footer-content {
@@ -45,6 +47,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    z-index: 2;
+
 }
 
 .footer-left {
@@ -79,12 +83,12 @@ body {
 }
 
 .footer-icons li a:hover {
-    color: #FFD700;
+    color: white;
 }
 
 
 header {
-    margin-top: 20px;
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -95,7 +99,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 5;
+    background-color: black; /* Darker transparent background */
+
 }
 
 .logo {
@@ -169,6 +175,13 @@ section {
     align-items: center;
     gap: 8rem;
     background-color: black;
+    position: relative;
+    z-index: 1;
+}
+.home-content {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 10px; /* Adjust as needed to ensure footer visibility */
 }
 
 .home .home-content h1 {
@@ -227,7 +240,7 @@ span {
 
 .social-icons a:hover {
     color: black;
-    transform: scale(1.3) translateY(-5px);
+    transform: scale(1) translateY(-5px);
     background-color: gold;
     box-shadow: 0 0 25px gold;
 }
@@ -347,16 +360,10 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: -100;
 }
 
-.bg-animation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 
-}
 
 #stars {
     width: 1px;
